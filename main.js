@@ -79,7 +79,7 @@ function renderCoffees(coffees){
 
 
 function renderCoffee(coffee) {
-    var html = '<div>' + coffee.name + " " + coffee.roast + '</div>';
+    var html = '<div>' +  '<h2>' + coffee.name + '</h2>' + " " + coffee.roast + '</div>';
     return html;
 }
 
@@ -107,11 +107,14 @@ function updateCoffees(e) {
 }
 
 
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 
 var tbody = document.querySelector('#coffeetypes');
+
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+
 
 tbody.innerHTML = renderCoffees(coffees);
 
