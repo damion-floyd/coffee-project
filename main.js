@@ -79,7 +79,7 @@ function renderCoffees(coffees){
 
 
 function renderCoffee(coffee) {
-    var html = '<div>' + coffee.name + " " + coffee.roast + '</div>';
+    var html = '<div>' +  '<h2>' + coffee.name + '</h2>' + " " + coffee.roast + '</div>';
     return html;
 }
 
